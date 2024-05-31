@@ -1,0 +1,31 @@
+{
+  "name": "replicad-shrink-wrap",
+  "version": "0.1.0",
+  "description": "A function to return the shrink wrapped version of a replicad drawing",
+  "author": "Steve Genoud <steve@sgenoud.com>",
+  "homepage": "https://github.com/sgenoud/replicad-shrink-wrap",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "module": "dist/es/replicad-shrink-wrap.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.1",
+    "rollup": "^3.9.1",
+    "rollup-plugin-replace-imports-with-vars": "^1.1.0"
+  },
+  "peerDependencies": {
+    "replicad": "^0.16.1"
+  },
+  "dependencies": {
+    "@thi.ng/geom-hull": "^2.1.127"
+  }
+}
